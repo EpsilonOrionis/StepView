@@ -296,6 +296,16 @@ public class HorizontalStepsViewIndicator extends View
     }
 
     /**
+     *
+     * 设置线间距的比例系数 set linePadding proportion
+     * @param linePaddingProportion
+     */
+    public void setIndicatorLinePaddingProportion(float linePaddingProportion)
+    {
+        this.mLinePadding = linePaddingProportion * defaultStepIndicatorNum;
+    }
+
+    /**
      * 设置默认图片
      *
      * @param defaultIcon

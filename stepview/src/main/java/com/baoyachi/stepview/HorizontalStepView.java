@@ -108,6 +108,18 @@ public class HorizontalStepView extends LinearLayout implements HorizontalStepsV
     }
 
     /**
+     * set linePadding  proportion 设置线间距的比例系数
+     *
+     * @param linePaddingProportion
+     * @return
+     */
+    public HorizontalStepView setLinePaddingProportion(float linePaddingProportion)
+    {
+        this.mStepsViewIndicator.setIndicatorLinePaddingProportion(linePaddingProportion);
+        return this;
+    }
+
+    /**
      * 设置StepsViewIndicator完成线的颜色
      *
      * @param completedLineColor
